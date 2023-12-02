@@ -16,7 +16,7 @@ pub fn process(input: &str) -> u32 {
                     "blue" => min_colours.2 = number.max(min_colours.2),
                     _ => {}
                 }
-                println!("Color: {}, Number: {}", color, number);
+                // println!("Color: {}, Number: {}", color, number);
             }
             println!("min_colours: {:?}", min_colours);
             min_colours.0 * min_colours.1 * min_colours.2
