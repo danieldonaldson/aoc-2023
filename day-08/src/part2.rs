@@ -50,7 +50,7 @@ pub fn process(input: &str) -> u64 {
         // dbg!(&current);
     }
 
-    lcm.values().product()
+    lcm.values().fold(1, |acc, v| num::integer::lcm(acc, *v))
 }
 
 fn parse_input(input: &str) -> (Vec<char>, HashMap<&str, Node>) {

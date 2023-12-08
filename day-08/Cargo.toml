@@ -7,3 +7,6 @@ edition = "2021"
 
 [dev-dependencies]
 rstest = "0.18.2"
+
+[dependencies]
+num = "0.4.1"
